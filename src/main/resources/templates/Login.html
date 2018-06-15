@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body{
+            background-color: black;
+            font-family: Helvetica, sans-serif;
+        }
+        
+        #form-box {
+            width: 500px;
+            height: 200px;
+            border: 1px solid white;
+            padding: 30px;
+            margin: auto;
+            margin-top: 62px;
+            border-radius: 20px;
+            
+        }
+        form{
+            margin-left: 75px;;
+            width: 700px;
+        }
+        label{
+            color: white;
+        }
+        input {
+            display: block;
+            width: 50%;
+        }
+        
+        #login, #senha {
+            padding: 8px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border-color: white;
+            background-color: black;
+            color: white;
+        }
+        #submit{
+            padding: 5px;
+            border-radius: 5px;
+            background: #1874CD;
+            color: white;
+            margin-top: 22px;
+        }
+        header{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        span{
+            display: block;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        h2{
+            font-size: 15px;
+        }
+    </style>
+</head>
+    <body>
+    <main>
+        <header>
+            <span><h1>Bem-vindo.</h1></span>
+            <span><h2>Faça login para continuar</h2></span>
+        </header>
+        <div id="form-box">
+            <form action="/logado" method="post">
+            <label for="login">Login:</label>
+            <input type="text" id="login" name="login" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <input type="submit" id="submit" value="Enviar" >
+        </form>
+        </div>
+        
+    </main>
+    </body>
+</html>
